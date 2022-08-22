@@ -166,7 +166,7 @@ As the first pipeline step (black box) shows, [above](#the-ytt-pipeline) :
 4. merge those documents, [in order](ytt-data-values.md#splitting-data-values-overlays-into-multiple-files). That is, start with the first document and then overlay the second one onto it; then overlay the third document on top of _that_, and so on...
 5. finally, override values with the "Custom Values" input, as described in [How to Use Data Values > Configuring Data Values](how-to-use-data-values.md#configuring-data-values).
 
-_(Note the data in-flow arrows into this pipeline step are deliberately ordered, left-to-right, reinforcing the sequence in which values are set: defaults from schema, data values documents, and custom values; last source wins.)_
+_(Note the data in-flow arrows into this pipeline step are deliberately ordered, left-to-right, reinforcing the sequence in which values are set: defaults from schema, data values documents, and custom values; **last source wins**.)_
 
 The result of all this is the final set of values that will be available to templates: the dark grey "final Data Values".
 
